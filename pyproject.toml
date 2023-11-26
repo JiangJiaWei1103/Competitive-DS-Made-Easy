@@ -21,11 +21,12 @@ profile = "black"
 line_length = 119
 
 [tool.mypy]
-ignore_missing_imports = True
-disallow_untyped_defs = True
-check_untyped_defs = True
-warn_redundant_casts = True
-no_implicit_optional = True
-no_strict_optional = True  # Disable strict checking of Optional types and `None` values
-allow_redefinition = True
+ignore_missing_imports = true
+disallow_untyped_defs = true
+check_untyped_defs = true
+warn_redundant_casts = true
+no_implicit_optional = true
+# Disable strict checking of Optional types and `None` values
+no_strict_optional = true
+allow_redefinition = true
 #exclude = ['']
