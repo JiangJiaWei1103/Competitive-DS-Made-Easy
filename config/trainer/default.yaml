@@ -1,0 +1,39 @@
+# trainer/default
+# * [ ] Group loss_fn
+
+# == Default List ==
+defaults:
+    - optimizer: adam
+    - lr_skd: cos
+
+# == Trainer Core ==
+device: "cuda:0"
+epochs: 1
+loss_fn:
+    name: "l1"
+    rescale: False
+# Model checkpoint
+model_ckpt:
+    ckpt_metric: mae
+    ckpt_mode: min
+    best_ckpt_mid: last
+# Early stopping
+es:
+    patience: 0
+    mode: null
+
+dataloader:
+    batch_size: 64
+    shuffle: True
+    num_workers: 0
+    pin_memory: False
+    drop_last: False
+
+evaluator:
+    eval_metrics:
+        - mae
+        - rmse
+
+grad_accum_steps: 1
+step_per_batch: True
+use_amp: null

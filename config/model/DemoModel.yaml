@@ -1,0 +1,8 @@
+# model/DemoModel
+model_params:
+    in_dim: 15
+    h_dim: 16
+    out_dim: 1
+
+# Always ignored, exists for compatibility
+fit_params: null

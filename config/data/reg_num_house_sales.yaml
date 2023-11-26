@@ -1,0 +1,11 @@
+# data/reg_num_house_sales
+dp:
+    data_cv_path: ./data/raw/reg_num_house_sales.csv
+    scaling: standard
+
+cv:
+    scheme: kf
+    n_folds: 5
+    random_state: 42
+
+dataset: {}

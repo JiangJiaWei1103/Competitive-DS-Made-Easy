@@ -1,6 +1,6 @@
 # Cache
 __pycache__
-.ipynb_checkpoints/
+.ipynb_checkpoints
 wandb/
 *.swp
 .mypy_cache
@@ -17,10 +17,6 @@ notebooks/
 legacy/
 
 # Local cfg
-config/dp.yaml
-config/defaults.yaml
-config/model/*
-!config/model/*template.yaml
 
 # Data
 data/raw/*
